@@ -1,0 +1,15 @@
+# Dependencias: se reconstruyen con npm install
+node_modules/
+
+# Datos personales de la bitácora: no van al repositorio
+data/
+respaldos/
+
+# Archivos generados por "exportar"
+salida/
+
+# Sistema operativo / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log

@@ -1,0 +1,29 @@
+{
+  "name": "bitacora-cli",
+  "version": "1.0.0",
+  "description": "Bitácora de aprendizaje por consola: guarda notas, evita duplicados, genera respaldos y exporta a texto plano.",
+  "keywords": [
+    "bitacora",
+    "notas",
+    "cli",
+    "consola",
+    "nodejs",
+    "fs",
+    "object-hash",
+    "sena"
+  ],
+  "author": "Aprendiz SENA - Ficha 3406211",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "object-hash": "^3.0.0",
+    "fechas-bitacora-sofiagonzalezgallego": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20.12"
+  }
+}
