@@ -12,6 +12,7 @@
 // vive en almacen.js.
 
 const hash = require('object-hash');
+
 const almacen = require('./almacen');
 
 const ETIQUETA_POR_DEFECTO = 'general';

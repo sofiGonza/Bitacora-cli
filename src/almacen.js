@@ -12,6 +12,7 @@
 // carpeta data/ del proyecto (Sesión 4).
 
 const fs = require('fs');
+
 const path = require('path');
 
 const RAIZ_PROYECTO = path.join(__dirname, '..');

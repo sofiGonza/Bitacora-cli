@@ -15,6 +15,7 @@
 //   combinar copia (fs.copyFileSync) y borrado (fs.unlinkSync).
 
 const fs = require('fs');
+
 const os = require('os');
 const path = require('path');
 const almacen = require('./almacen');

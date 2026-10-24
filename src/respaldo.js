@@ -7,7 +7,9 @@
 // entero (internamente lee y escribe, pero en una sola llamada).
 
 const fs = require('fs');
+
 const path = require('path');
+
 const almacen = require('./almacen');
 
 /**
