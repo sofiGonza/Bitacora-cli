@@ -1,0 +1,11 @@
+Rechazo de una nota duplicada
+Fecha de la prueba: 2026-10-22 16:38:21
+
+$ npm start -- agregar "Hoy aprendí a usar fs" nodejs   (primera vez)
+Ya existe una nota igual (id 3d79f3e7). No se guardó.
+
+$ npm start -- agregar "Hoy aprendí a usar fs" nodejs   (segunda vez)
+Ya existe una nota igual (id 3d79f3e7). No se guardó.
+
+$ npm start -- listar 3   (se confirma que solo hay una nota)
+[3d79f3e7] (nodejs) 22/10/2026 — Hoy aprendí a usar fs

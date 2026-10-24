@@ -1,0 +1,6 @@
+BITÁCORA DE APRENDIZAJE
+Exportada: jueves, 22 de octubre de 2026, 16:38:10 GMT-5
+Total de notas: 1
+========================================================================
+[3d79f3e7] (nodejs) 22/10/2026
+Hoy aprendí a usar fs

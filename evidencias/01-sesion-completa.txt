@@ -1,0 +1,48 @@
+Sesión de uso — los 7 comandos
+Fecha de la prueba: 2026-10-22 16:37:51
+Nota: las líneas "npm notice" de npm se omitieron para facilitar la lectura.
+
+$ npm start -- agregar "Hoy aprendí a usar fs" nodejs
+Nota guardada [3d79f3e7] (nodejs) — jueves, 22 de octubre de 2026, 16:57:53 GMT-5
+
+$ npm start -- listar 3
+[3d79f3e7] (nodejs) 22/10/2026 — Hoy aprendí a usar fs
+
+$ npm start -- buscar fs
+1 coincidencia(s) para "fs":
+[3d79f3e7] (nodejs) 22/10/2026 — Hoy aprendí a usar fs
+
+$ npm start -- agregar "Repasé los retos de la sesión 4" fs
+Nota guardada [640d2f47] (fs) — jueves, 22 de octubre de 2026, 16:38:02 GMT-5
+
+$ npm start -- borrar 640d2f47
+Nota eliminada [640d2f47] — Repasé los retos de la sesión 4
+
+$ npm start -- respaldar
+Respaldo creado: respaldos/notas_1792705086981.json (1 nota(s)).
+
+$ npm start -- exportar "E:\CuartoTrimestre\NodeJS\Bitacora-cli\evidencias\exportacion-ejemplo"
+Archivo generado: salida/exportacion.txt
+Notas exportadas: 1
+Archivo movido a: E:\CuartoTrimestre\NodeJS\Bitacora-cli\evidencias\exportacion-ejemplo\exportacion.txt
+El archivo ya no está en salida/.
+
+$ npm start -- ayuda
+Bitácora de aprendizaje — comandos disponibles
+
+  agregar "<texto>" [etiqueta]    Guarda una nota (etiqueta opcional; por defecto: general)
+  listar [N]                      Muestra las últimas N notas (por defecto: 5)
+  buscar <palabra>                Busca en el texto sin distinguir mayúsculas
+  borrar <id>                     Elimina la nota con ese id
+  respaldar                       Copia data/notas.json a respaldos/
+  exportar [carpeta-destino]      Mueve un archivo de texto a una ruta absoluta
+  ayuda                           Muestra esta ayuda
+
+Ejemplos (los argumentos van después de --):
+  npm start -- agregar "Hoy aprendí a usar fs" nodejs
+  npm start -- listar 3
+  npm start -- buscar fs
+  npm start -- borrar 3f9a1c2e
+  npm start -- respaldar
+  npm start -- exportar C:\Users\tu-usuario\Desktop
+  npm start -- ayuda

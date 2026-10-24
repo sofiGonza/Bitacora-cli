@@ -1,0 +1,25 @@
+Validaciones — el programa nunca termina con un error sin explicar
+Fecha de la prueba: 2026-10-22 16:40:08
+
+$ npm start -- agregar
+Falta el texto de la nota.
+Uso: npm start -- agregar "<texto>" [etiqueta]
+
+$ npm start -- listar abc
+"abc" no es un número válido; se muestran las últimas 5 notas.
+[3d79f3e7] (nodejs) 22/10/2026 — Hoy aprendí a usar fs
+
+$ npm start -- borrar deadbeef
+No existe una nota con el id "deadbeef".
+
+$ npm start -- exportar Desktop   (ruta relativa: no se mueve nada)
+No se exportó nada: "Desktop" no es una ruta absoluta. Escribe la ruta completa, por ejemplo C:\Users\tu-usuario\Desktop en Windows o /home/tu-usuario en Linux/macOS.
+
+$ npm start -- exportar "E:\NoExiste"   (carpeta inexistente)
+No se exportó nada: La carpeta "E:\NoExiste" no existe.
+
+$ npm start -- comando-que-no-existe
+El comando "comando-que-no-existe" no existe.
+
+Bitácora de aprendizaje — comandos disponibles
+

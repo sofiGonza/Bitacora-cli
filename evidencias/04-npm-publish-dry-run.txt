@@ -1,0 +1,23 @@
+npm publish --dry-run — paquete fechas-bitacora-sofiagonzalezgallego
+Fecha de la prueba: 2026-10-22 16:39:05
+
+$ npm publish --dry-run
+
+npm notice
+npm notice 📦  fechas-bitacora-sofiagonzalezgallego@1.0.0
+npm notice Tarball Contents
+npm notice 2.0kB README.md
+npm notice 558B package.json
+npm notice 2.1kB src/index.js
+npm notice Tarball Details
+npm notice name: fechas-bitacora-sofiagonzalezgallego
+npm notice version: 1.0.0
+npm notice filename: fechas-bitacora-sofiagonzalezgallego-1.0.0.tgz
+npm notice package size: 2.0 kB
+npm notice unpacked size: 4.7 kB
+npm notice shasum: 2e560a35921ec4e3dd57c71e9a8101943f1c9fa1
+npm notice integrity: sha512-OsF9qCQrI9y42[...]wYIq+8PUUbz9Q==
+npm notice total files: 3
+npm notice
+npm notice Publishing to https://registry.npmjs.org/ with tag latest and default access (dry-run)
++ fechas-bitacora-sofiagonzalezgallego@1.0.0

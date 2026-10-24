@@ -5,14 +5,12 @@
   "keywords": [
     "bitacora",
     "notas",
-    "cli",
     "consola",
     "nodejs",
     "fs",
-    "object-hash",
-    "sena"
+    "npm"
   ],
-  "author": "Aprendiz SENA - Ficha 3406211",
+  "author": "Sofia Gonzalez - Ficha 3406204",
   "license": "MIT",
   "type": "commonjs",
   "main": "src/index.js",

@@ -1,0 +1,18 @@
+notas.json dañado y mensaje de error controlado
+Fecha de la prueba: 2026-10-22 16:38:56
+
+1) Se escribe contenido basura dentro de data/notas.json:
+
+   $ echo "esto no es un json válido" > data/notas.json
+
+2) Se ejecuta un comando que debe leer el archivo (stdout + stderr):
+
+$ npm start -- listar 3
+No se pudo leer la bitácora.
+El archivo data/notas.json está dañado o no tiene el formato esperado. El JSON no se pudo interpretar (Unexpected token 'e', "esto no es"... is not valid JSON).
+Revisa data/notas.json o restaura un respaldo de la carpeta respaldos/.
+   (código de salida: 1)
+
+3) Se restaura el respaldo para dejar la bitácora operativa:
+   $ cp /tmp/notas_ok.json data/notas.json  → OK, la bitácora vuelve a funcionar:
+[3d79f3e7] (nodejs) 22/10/2026 — Hoy aprendí a usar fs

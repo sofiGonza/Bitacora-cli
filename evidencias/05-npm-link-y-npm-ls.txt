@@ -1,0 +1,45 @@
+npm link — enlace del paquete propio
+Fecha de la prueba: 2026-10-22 16:39:28
+
+1) En la carpeta del paquete:
+$ cd ../fechas-bitacora-sofiagonzalezgallego && npm link
+
+up to date, audited 3 packages in 2s
+
+found 0 vulnerabilities
+
+2) Enlace global creado (vive en el disco C:, que sí es NTFS):
+$ ls -la "$APPDATA/npm/node_modules" | grep fechas
+lrwxrwxrwx 1 Sofia 197121 62 oct. 22 16:33 fechas-bitacora-sofiagonzalezgallego -> /e/CuartoTrimestre/NodeJS/fechas-bitacora-sofiagonzalezgallego
+
+3) En el proyecto:
+$ cd ../Bitacora-cli && npm link fechas-bitacora-sofiagonzalezgallego
+npm error code EISDIR
+npm error syscall symlink
+npm error path E:\CuartoTrimestre\NodeJS\fechas-bitacora-sofiagonzalezgallego
+npm error dest E:\CuartoTrimestre\NodeJS\Bitacora-cli\node_modules\fechas-bitacora-sofiagonzalezgallego
+npm error errno -4068
+npm error EISDIR: illegal operation on a directory, symlink 'E:\CuartoTrimestre\NodeJS\fechas-bitacora-sofiagonzalezgallego' -> 'E:\CuartoTrimestre\NodeJS\Bitacora-cli\node_modules\fechas-bitacora-sofiagonzalezgallego'
+npm error A complete log of this run can be found in: C:\Users\Sofia\AppData\Local\npm-cache\_logs\2026-10-22T21_39_32_520Z-debug-0.log
+
+   Limitación del equipo: la unidad E: es FAT32 y Windows no permite
+   enlaces simbólicos ni junction points allí (error EISDIR). En un disco
+   NTFS el comando anterior crea el enlace dentro de node_modules/.
+   Alternativa usada aquí, que copia el paquete ya construido:
+   $ npm install --install-links
+
+4) Verificación del árbol de dependencias:
+$ npm ls
+bitacora-cli@1.0.0 E:\CuartoTrimestre\NodeJS\Bitacora-cli
+├── fechas-bitacora-sofiagonzalezgallego@1.0.0
+└── object-hash@3.0.0
+
+
+5) Contenido instalado del paquete (debe incluir src/index.js):
+node_modules/fechas-bitacora-sofiagonzalezgallego:
+package.json
+README.md
+src
+
+node_modules/fechas-bitacora-sofiagonzalezgallego/src:
+index.js
